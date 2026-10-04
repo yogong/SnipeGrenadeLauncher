@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="SnipeGrenadeLauncher" ParentName="BaseGun">
+    <label>snipe grenade launcher</label>
+    <description>Long range grenade launcher. Firing explosive grenades, deal area damage.</description>
+    <graphicData>
+      <texPath>Things/Weapons/SnipeGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>Weapons</li>
+    </thingCategories>
+    <equippedStatOffsets>
+      <ShootingAccuracy>0.12</ShootingAccuracy>
+    </equippedStatOffsets>
+    <statBases>
+      <Mass>4.2</Mass>
+      <MarketValue>950</MarketValue>
+      <WorkToMake>4200</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+    </statBases>
+    <gunProperties>
+      <projectile>CustomProjectile_SnipeGrenade</projectile>
+      <range>38</range>
+      <burstShotCount>1</burstShotCount>
+      <fireRate>0.45</fireRate>
+      <aimingAccuracyFactor>0.88</aimingAccuracyFactor>
+      <warmupTime>2.4</warmupTime>
+      <reloadTime>2.8</reloadTime>
+      <magazineSize>4</magazineSize>
+      <soundShot>GunShot_Rocket</soundShot>
+      <soundReload>GunReload_Heavy</soundReload>
+    </gunProperties>
+    <recipeMaker>
+      <skill>Crafting</skill>
+      <skillLevel>10</skillLevel>
+      <ingredients>
+        <li>
+          <thing>Steel</thing>
+          <count>80</count>
+        </li>
+        <li>
+          <thing>ComponentIndustrial</thing>
+          <count>6</count>
+        </li>
+      </ingredients>
+    </recipeMaker>
+  </ThingDef>
+</Defs>
