@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ProjectileDef Name="CustomProjectile_SnipeGrenade" Class="Projectile">
+    <label>snipe grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/Grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <damageDef>Bomb</damageDef>
+    <damageAmountBase>45</damageAmountBase>
+    <explosionRadius>3.2</explosionRadius>
+    <explosionDamageFalloff>true</explosionDamageFalloff>
+    <speed>22</speed>
+    <impactSound>ExplosionSmall</impactSound>
+    <explosionSound>ExplosionSmall</explosionSound>
+    <canTargetNonPawn>true</canTargetNonPawn>
+    <postExplosionFilth>Filth_Burned</postExplosionFilth>
+  </ProjectileDef>
+</Defs>
